@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thrive Clip Productions — Patient stories that fill OPDs</title>
+  <meta name="description"
+    content="We live and breathe patient stories. Documentary-style patient acquisition campaigns for hospitals, clinics & dental practices across Jaipur.">
+  <meta property="og:title" content="Thrive Clip Productions — Patient stories that fill OPDs">
+  <meta property="og:description" content="Video production + performance marketing for Jaipur healthcare providers. 3.2× more OPD appointments.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_IN">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Caveat:wght@500;700&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            hand: ['Caveat', 'cursive'],
+          },
+          colors: {
+            ink: '#1A202C',
+            paper: '#F5F7FA',
+            orange: '#FF6B35',
+            sun: '#E8F4FD',
+            primary: '#0066CC',
+            teal: '#00A67E',
+            sky: '#4A90D9',
+            mint: '#00A67E',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    :root {
+      --primary-blue: #0066CC;
+      --secondary-teal: #00A67E;
+      --accent-orange: #FF6B35;
+      --neutral-gray: #F5F7FA;
+      --text-dark: #1A202C;
+      --text-body: #4A5568;
+      --white: #FFFFFF;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      background: #F5F7FA;
+      color: #1A202C;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .font-hand {
+      font-family: 'Caveat', cursive;
+    }
+
+    .sh-2 {
+      box-shadow: 2px 2px 0 #1A202C;
+    }
+
+    .sh-3 {
+      box-shadow: 3px 3px 0 #1A202C;
+    }
+
+    .sh-4 {
+      box-shadow: 4px 4px 0 #1A202C;
+    }
+
+    .sh-5 {
+      box-shadow: 5px 5px 0 #1A202C;
+    }
+
+    .sh-6 {
+      box-shadow: 6px 6px 0 #1A202C;
+    }
+
+    .sh-orange-4 {
+      box-shadow: 4px 4px 0 #FF6B35;
+    }
+
+    .sh-orange-8 {
+      box-shadow: 8px 8px 0 #FF6B35;
+    }
+
+    .ink-border {
+      border: 1.5px solid #1A202C;
+    }
+
+    .btn-press {
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+
+    .btn-press:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 6px 6px 0 #1A202C;
+    }
+
+    .btn-press:active {
+      transform: translate(2px, 2px);
+      box-shadow: 0 0 0 #1A202C;
+    }
+
+    .bubble-tail::after {
+      content: "";
+      position: absolute;
+      left: 22px;
+      bottom: -10px;
+      width: 16px;
+      height: 16px;
+      background: inherit;
+      border: 1.5px solid #1A202C;
+      border-top: none;
+      border-right: none;
+      transform: rotate(-45deg);
+      border-radius: 0 0 0 6px;
+    }
+
+    .line-grid {
+      background-image: linear-gradient(rgba(26, 32, 44, 0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(26, 32, 44, 0.04) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+
+    .hl-yellow {
+      background: #DBEAFE;
+      padding: 0 6px;
+      border-radius: 4px;
+      font-weight: 700;
+      color: #0066CC;
+    }
+
+    .hl-pink {
+      background: #E6F7F2;
+      padding: 0 6px;
+      border-radius: 4px;
+      font-weight: 700;
+      color: #00A67E;
+    }
+
+    .hl-blue {
+      background: #DBEAFE;
+      padding: 0 6px;
+      border-radius: 4px;
+      font-weight: 700;
+      color: #0066CC;
+    }
+
+    .hl-green {
+      background: #E6F7F2;
+      padding: 0 6px;
+      border-radius: 4px;
+      font-weight: 700;
+      color: #00A67E;
+    }
+
+    .hl-purple {
+      background: #DBEAFE;
+      padding: 0 6px;
+      border-radius: 4px;
+      font-weight: 700;
+      color: #0066CC;
+    }
+
+    .tag-block {
+      background: #0066CC;
+      color: #fff;
+      border: 1.5px solid #1A202C;
+      border-radius: 12px;
+      padding: 0 12px;
+      box-shadow: 3px 3px 0 #1A202C;
+      display: inline-block;
+    }
+
+    @keyframes floaty {
+
+      0%,
+      100% {
+        transform: translateY(0px) rotate(var(--r, 0deg));
+      }
+
+      50% {
+        transform: translateY(-8px) rotate(var(--r, 0deg));
+      }
+    }
+
+    .floaty {
+      animation: floaty 5s ease-in-out infinite;
+    }
+
+    @media (max-width: 640px) {
+      @keyframes floaty {
+
+        0%,
+        100% {
+          transform: translateY(0px) rotate(var(--r, 0deg));
+        }
+
+        50% {
+          transform: translateY(-4px) rotate(var(--r, 0deg));
+        }
+      }
+    }
+
+    .chartline {
+      stroke-dasharray: 600;
+      stroke-dashoffset: 600;
+      animation: drawline 2.2s 0.4s ease-out forwards;
+    }
+
+    @keyframes drawline {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    .h-hero {
+      font-size: clamp(40px, 8vw, 84px);
+      line-height: 1.0;
+      letter-spacing: -0.035em;
+      font-weight: 800;
+      text-wrap: balance;
+    }
+
+    .h-section {
+      font-size: clamp(32px, 5.5vw, 56px);
+      line-height: 1.05;
+      letter-spacing: -0.025em;
+      font-weight: 800;
+    }
+
+    .h-cta {
+      font-size: clamp(38px, 7vw, 76px);
+      line-height: 1.0;
+      letter-spacing: -0.03em;
+      font-weight: 800;
+    }
+
+    .h-banner {
+      font-size: clamp(32px, 6vw, 60px);
+      letter-spacing: -0.02em;
+      font-weight: 800;
+    }
+
+    [data-anim] {
+      opacity: 0;
+    }
+
+    /* ===== CENTERING FOR DOCTOR EMOJI - ALL DEVICES ===== */
+    .hero-right-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 100%;
+    }
+
+    .hero-center-circle {
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+    }
+
+    .hero-top-cards {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 1rem;
+    }
+
+    .hero-bottom-cards {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1rem;
+    }
+
+    @media (min-width: 1024px) {
+      .hero-right-wrapper {
+        height: 100%;
+        min-height: 540px;
+      }
+
+      .hero-top-cards {
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 90%;
+        margin-bottom: 0;
+      }
+
+      .hero-bottom-cards {
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 90%;
+        margin-top: 0;
+      }
+    }
+
+    .hero-top-cards {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 2%;
+      margin-bottom: 1rem;
+    }
+
+    .hero-bottom-cards {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 2%;
+      margin-top: 1rem;
+    }
+
+    /* Desktop specific positioning */
+    @media (min-width: 1024px) {
+      .hero-right-wrapper {
+        height: 100%;
+        min-height: 540px;
+      }
+
+      .hero-top-cards {
+        position: absolute;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin-bottom: 0;
+        padding: 0 10%;
+      }
+
+      .hero-bottom-cards {
+        position: absolute;
+        bottom: 5%;
+        left: 0;
+        right: 0;
+        margin-top: 0;
+        padding: 0 10%;
+      }
+    }
+  </style>
+  <base target="_blank">
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '858425540607596');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=858425540607596&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
+</head>
+
+<body class="overflow-x-hidden">
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-40 bg-paper/85 backdrop-blur-md">
+    <div class="max-w-[1440px] mx-auto px-5 md:px-10 lg:px-16 py-4 md:py-6 flex items-center justify-between gap-4">
+      <div class="relative" data-anim="fade-down">
+        <div class="bg-white ink-border rounded-[28px] py-2 pl-2 pr-4 flex items-center gap-2.5 sh-3 bubble-tail">
+          <img src="tcp-logo.jpeg" alt="TCP" class="w-9 h-9 rounded-full ink-border object-cover">
+          <span class="font-extrabold text-[17px] tracking-tight">TCP!</span>
+        </div>
+      </div>
+      <nav class="hidden lg:flex items-center gap-1 bg-white ink-border rounded-full p-1.5 sh-3" data-anim="fade-down">
+        <a href="#why" class="px-5 py-2.5 text-sm font-semibold rounded-full hover:bg-sun transition">Why TCP</a>
+        <a href="#process" class="px-5 py-2.5 text-sm font-semibold rounded-full hover:bg-sun transition">Process</a>
+        <a href="#voices" class="px-5 py-2.5 text-sm font-semibold rounded-full hover:bg-sun transition">Hospitals</a>
+        <a href="#voices" class="px-5 py-2.5 text-sm font-semibold rounded-full hover:bg-sun transition">Voices</a>
+        <a href="#faq" class="px-5 py-2.5 text-sm font-semibold rounded-full hover:bg-sun transition">FAQ</a>
+      </nav>
+      <a href="#audit"
+        class="hidden md:inline-flex items-center gap-2.5 bg-orange text-white ink-border rounded-full px-5 py-3 text-sm font-bold sh-4 btn-press"
+        data-anim="fade-down">
+        <span class="w-2 h-2 rounded-full bg-white"></span>
+        Free Practice Audit
+        <span class="text-base">→</span>
+      </a>
+      <button id="menuBtn" class="lg:hidden ink-border rounded-full p-2 bg-white sh-2" aria-label="Open menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+          stroke-linecap="round">
+          <path d="M4 7h16M4 12h16M4 17h16" />
+        </svg>
+      </button>
+    </div>
+    <div id="mobileMenu" class="hidden lg:hidden border-t-2 border-ink/10 bg-paper">
+      <ul class="px-5 py-4 space-y-1">
+        <li><a href="#why" class="block py-2.5 font-semibold">Why TCP</a></li>
+        <li><a href="#process" class="block py-2.5 font-semibold">Process</a></li>
+        <li><a href="#voices" class="block py-2.5 font-semibold">Hospitals</a></li>
+        <li><a href="#voices" class="block py-2.5 font-semibold">Voices</a></li>
+        <li><a href="#faq" class="block py-2.5 font-semibold">FAQ</a></li>
+        <li class="pt-2"><a href="#audit"
+            class="block bg-orange text-white text-center ink-border rounded-full py-3 font-bold sh-3">Free Practice Audit
+            →</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative px-5 md:px-10 lg:px-16 pt-6 md:pt-10 pb-16 md:pb-20 max-w-[1440px] mx-auto">
+    <div class="hidden md:block absolute top-32 right-32 w-6 h-6 bg-teal rounded-md rotate-12 floaty"
+      style="--r:12deg;"></div>
+    <div class="hidden md:block absolute top-48 right-72 w-4 h-4 bg-sun rounded floaty" style="animation-delay:.6s;">
+    </div>
+    <div class="hidden md:block absolute top-[380px] right-24 w-8 h-8 bg-sky/60 rounded-md floaty"
+      style="animation-delay:.3s;"></div>
+    <div class="hidden md:block absolute top-20 right-[36%] text-2xl floaty" style="animation-delay:.5s;">✦</div>
+    <div class="hidden md:block absolute top-[480px] right-[40%] text-base floaty" style="animation-delay:1s;">✦</div>
+    <div
+      class="hidden md:block absolute top-12 right-10 lg:right-16 w-[55%] max-w-[720px] h-[540px] line-grid rounded-3xl pointer-events-none">
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-10 lg:gap-12 items-start relative z-10">
+      <!-- LEFT -->
+      <div data-anim="fade-up">
+        <div class="relative inline-block mb-7">
+          <div
+            class="bg-white ink-border rounded-full px-5 py-3 inline-flex items-center gap-2 text-[11px] font-bold tracking-[0.08em] uppercase bubble-tail">
+            <span class="w-2 h-2 rounded-full bg-orange"></span>
+            Hello, hospital administrators of Jaipur 👋
+          </div>
+        </div>
+        <h1 class="h-hero">
+          We live and breathe
+          <span class="tag-block">patient</span>
+          stories.
+        </h1>
+        <div class="flex items-center gap-5 mt-9 flex-wrap">
+          <div class="bg-white ink-border rounded-2xl px-4 py-3 flex items-center gap-3 sh-3">
+            <span class="text-2xl">🏥</span>
+            <div class="leading-none">
+              <div class="text-[22px] font-extrabold leading-none">3.2×</div>
+              <div class="text-[11px] text-ink/60 mt-1">more OPD appointments</div>
+            </div>
+          </div>
+          <div class="relative flex items-center gap-2">
+            <svg width="100" height="60" viewBox="0 0 100 60" class="hidden sm:block">
+              <path d="M 5 30 Q 25 5, 50 30 T 90 30" stroke="#1A202C" stroke-width="2" fill="none"
+                stroke-linecap="round" />
+              <path d="M 80 22 L 92 30 L 80 38" stroke="#1A202C" stroke-width="2" fill="none" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <span class="font-hand text-[22px] text-orange -rotate-6">that's the goal!</span>
+          </div>
+        </div>
+        <form class="mt-12 max-w-[480px] bg-white ink-border rounded-full p-1.5 flex items-center sh-4"
+          onsubmit="event.preventDefault(); document.getElementById('audit').scrollIntoView({behavior:'smooth'});">
+          <input type="url" placeholder="Your hospital's website…"
+            class="flex-1 bg-transparent outline-none px-5 py-3 text-[15px] placeholder:text-ink/45 min-w-0">
+          <button type="button" onclick="document.getElementById('audit').scrollIntoView({behavior:'smooth'});"
+            class="bg-orange text-white ink-border rounded-full px-5 py-3 text-sm font-bold whitespace-nowrap inline-flex items-center gap-2 btn-press">
+            Book Free Audit <span>→</span>
+          </button>
+        </form>
+        <ul class="flex items-center flex-wrap gap-x-5 gap-y-2 mt-4 text-[13px] text-ink/65">
+          <li>✓ 30 min</li>
+          <li>✓ No deck</li>
+          <li>✓ 3 fixes you keep</li>
+        </ul>
+      </div>
+
+      <!-- RIGHT - CENTERED on all devices -->
+      <div class="hero-right-wrapper w-full mx-auto mt-4 lg:mt-0 flex items-center justify-center" data-anim="fade-up">
+        <!-- TOP ROW -->
+        <div class="hero-top-cards flex items-start justify-between w-full px-2 z-20">
+          <div class="bg-white ink-border rounded-2xl p-3 sm:p-4 sh-4 floaty -rotate-[4deg] w-[150px] sm:w-[170px]"
+            style="--r:-4deg; animation-delay:.2s;">
+            <div class="text-[10px] tracking-[0.08em] font-bold uppercase text-ink/55">New Patients ↗</div>
+            <div class="text-[24px] sm:text-[28px] font-extrabold leading-none mt-1">+180</div>
+            <svg viewBox="0 0 148 40" class="w-full h-8 sm:h-10 mt-1">
+              <path class="chartline" d="M 4 32 L 30 24 L 56 28 L 82 16 L 108 18 L 144 6" stroke="#00A67E"
+                stroke-width="3" fill="none" stroke-linecap="round" />
+              <circle cx="144" cy="6" r="4" fill="#FF6B35" stroke="#1A202C" stroke-width="1.5" />
+            </svg>
+            <div class="text-[10px] text-ink/55 mt-1">vs last quarter</div>
+          </div>
+          <div class="bg-white ink-border rounded-2xl px-4 py-3 sm:px-5 sm:py-4 sh-4 floaty rotate-[5deg]"
+            style="--r:5deg; animation-delay:.5s;">
+            <div class="text-[10px] tracking-[0.08em] font-bold uppercase text-ink/55">Cost / Lead</div>
+            <div class="text-[24px] sm:text-[28px] font-extrabold text-orange leading-none mt-1">₹12</div>
+          </div>
+        </div>
+
+        <!-- CENTER: Doctor Emoji Circle - CENTERED -->
+        <div
+          class="hero-center-circle w-[260px] h-[260px] sm:w-[300px] sm:h-[300px] lg:w-[420px] lg:h-[420px] rounded-full ink-border sh-6 floaty overflow-hidden flex items-end justify-center z-10 my-4 lg:my-0 mx-auto"
+          style="background: linear-gradient(135deg, #0066CC 0%, #00A67E 100%); --r:0deg;">
+          <div class="text-[150px] sm:text-[170px] lg:text-[240px] -mb-2 leading-none">👨‍⚕️</div>
+        </div>
+
+        <!-- BOTTOM ROW -->
+        <div class="hero-bottom-cards flex items-end justify-between w-full px-2 z-20">
+          <div class="bg-white ink-border rounded-3xl px-4 py-2.5 sm:px-5 sm:py-3 sh-3 floaty flex items-center gap-2.5"
+            style="--r:0deg; animation-delay:1s;">
+            <span class="text-[20px] sm:text-[22px]">🏆</span>
+            <div class="leading-tight">
+              <div class="text-[13px] font-bold">40+ providers</div>
+              <div class="text-[10px] text-ink/55">across Rajasthan</div>
+            </div>
+          </div>
+          <div
+            class="bg-sun ink-border rounded-3xl px-4 py-3 sm:px-5 sm:py-4 max-w-[170px] sm:max-w-[200px] sh-3 floaty rotate-[3deg]"
+            style="--r:3deg; animation-delay:.8s;">
+            <div class="text-[13px] sm:text-[14px] font-semibold leading-snug">"Our OPD finally feels like a real patient journey!" 🙌</div>
+            <div class="text-[10px] sm:text-[11px] text-ink/55 mt-1.5">— Dr. Sharma</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLOR BLOB DIVIDER -->
+  <section class="px-5 md:px-10 lg:px-16 max-w-[1440px] mx-auto" data-anim="fade-up">
+    <div
+      class="ink-border sh-5 rounded-[36px] md:rounded-full px-6 md:px-12 py-7 md:py-8 flex flex-col md:flex-row items-center justify-between gap-6"
+      style="background: linear-gradient(120deg, #0066CC 0%, #00A67E 50%, #FF6B35 100%);">
+      <div class="flex flex-wrap items-center gap-2 md:gap-3 justify-center">
+        <div
+          class="w-11 h-11 md:w-12 md:h-12 rounded-xl bg-white ink-border flex items-center justify-center text-[22px]">
+          🎬</div>
+        <div
+          class="w-11 h-11 md:w-12 md:h-12 rounded-xl bg-white ink-border flex items-center justify-center text-[22px]">
+          🩺</div>
+        <div
+          class="w-11 h-11 md:w-12 md:h-12 rounded-xl bg-white ink-border flex items-center justify-center text-[22px]">
+          📈</div>
+        <div
+          class="w-11 h-11 md:w-12 md:h-12 rounded-xl bg-white ink-border flex items-center justify-center text-[22px]">
+          💬</div>
+        <div
+          class="w-11 h-11 md:w-12 md:h-12 rounded-xl bg-white ink-border flex items-center justify-center text-[22px]">
+          🏥</div>
+        <div
+          class="w-11 h-11 md:w-12 md:h-12 rounded-xl bg-white ink-border flex items-center justify-center text-[22px]">
+          🎯</div>
+      </div>
+      <div class="h-banner text-white text-center" style="text-shadow: 2px 2px 0 #1A202C;">Patient<br><span
+          class="italic">stories.</span></div>
+      <div class="bg-white ink-border rounded-2xl px-5 py-4 sh-3 min-w-[200px] text-center md:text-left">
+        <div class="font-hand text-[24px] leading-tight">We live & breathe<br><span class="text-orange">patient
+            stories</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO WE ARE -->
+  <section id="why" class="px-5 md:px-10 lg:px-16 max-w-[1440px] mx-auto pt-24 md:pt-32 pb-16 md:pb-20">
+    <div class="grid md:grid-cols-2 gap-10 md:gap-20 items-start">
+      <div data-anim="fade-up">
+        <p class="text-[17px] leading-[1.65] text-ink/85">We live and breathe patient stories — and clinical empathy runs
+          through every part of what we do.</p>
+        <p class="text-[17px] leading-[1.65] text-ink/85 mt-4">We work with multi-specialty hospitals, dental clinics, and maternity centers across Jaipur as a partner, not a vendor — building patient acquisition campaigns that turn online searches into OPD footfall, one cycle at a time.</p>
+      </div>
+      <div data-anim="fade-up">
+        <p class="text-[19px] leading-[1.55] font-medium">We are a team of <span class="hl-yellow">filmmakers</span>,
+          <span class="hl-pink">healthcare strategists</span>, <span class="hl-blue">media buyers</span>, <span
+            class="hl-green">patient storytellers</span>, and <span class="hl-purple">clinic growth consultants</span>.
+        </p>
+        <a href="#process"
+          class="mt-7 inline-flex items-center gap-2.5 bg-orange text-white ink-border rounded-full px-7 py-4 text-base font-bold sh-4 btn-press">
+          <span class="w-2 h-2 rounded-full bg-white"></span>Learn more about TCP<span>→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="px-5 md:px-10 lg:px-16 max-w-[1440px] mx-auto py-16 md:py-24">
+    <div class="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-5 mb-12 md:mb-14"
+      data-anim="fade-up">
+      <div
+        class="bg-ink text-white rounded-full px-5 py-2 text-[12px] font-bold tracking-[0.08em] uppercase whitespace-nowrap">
+        The Problem</div>
+      <h2 class="h-section">You're not short on content. You're short on <span
+          class="text-orange italic">patients.</span></h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-5 md:gap-6">
+      <article class="bg-white ink-border rounded-3xl p-7 sh-5 flex flex-col gap-4 md:min-h-[280px]"
+        data-anim="fade-up">
+        <div class="w-16 h-16 rounded-2xl bg-teal ink-border flex items-center justify-center text-[32px]">🛏️</div>
+        <h3 class="text-[22px] font-extrabold tracking-tight">Empty OPD slots, full waiting areas</h3>
+        <p class="text-[15px] leading-[1.55] text-ink/70">You're spending on clinic listings, newspaper ads, and 'health packages' — but your appointment calendar still has gaps and your reception desk is quiet.</p>
+      </article>
+      <article class="bg-white ink-border rounded-3xl p-7 sh-5 flex flex-col gap-4 md:min-h-[280px]"
+        data-anim="fade-up">
+        <div class="w-16 h-16 rounded-2xl bg-sun ink-border flex items-center justify-center text-[32px]">🎬</div>
+        <h3 class="text-[22px] font-extrabold tracking-tight">Content that nobody trusts</h3>
+        <p class="text-[15px] leading-[1.55] text-ink/70">Generic stock footage of smiling doctors set to elevator music. Patients scroll past in 0.6 seconds. The video ages out before the next flu season.</p>
+      </article>
+      <article class="bg-white ink-border rounded-3xl p-7 sh-5 flex flex-col gap-4 md:min-h-[280px]"
+        data-anim="fade-up">
+        <div class="w-16 h-16 rounded-2xl bg-sky ink-border flex items-center justify-center text-[32px]">🔥</div>
+        <h3 class="text-[22px] font-extrabold tracking-tight">Ads that burn budget</h3>
+        <p class="text-[15px] leading-[1.55] text-ink/70">Boosted posts on Justdial, no targeting, no funnel. Your cost-per-patient keeps climbing and there's no story to tell the hospital board at the end of the quarter.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="process" class="px-5 md:px-10 lg:px-16 max-w-[1440px] mx-auto py-16 md:py-24">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 md:mb-12" data-anim="fade-up">
+      <div>
+        <div
+          class="bg-orange text-white ink-border rounded-full px-5 py-2 text-[13px] font-bold tracking-[0.08em] uppercase inline-block sh-3">
+          How it works</div>
+        <h2 class="h-section mt-5">Three steps. <span class="font-hand text-orange font-bold">One patient
+            cycle.</span></h2>
+      </div>
+      <div
+        class="bg-sun ink-border rounded-2xl px-4 py-2.5 text-[13px] font-bold sh-3 rotate-2 self-start md:self-auto whitespace-nowrap">
+        Day 0 → Day 90</div>
+    </div>
+    <div class="bg-white ink-border rounded-[28px] sh-5 overflow-hidden" data-anim="fade-up">
+      <div
+        class="grid grid-cols-[auto_auto_1fr_auto] md:grid-cols-[120px_72px_1fr_60px] gap-4 md:gap-6 items-center px-5 md:px-8 py-6 md:py-7 border-b-[1.5px] border-ink/15 hover:bg-paper/40 transition">
+        <div class="w-16 h-16 md:w-[84px] md:h-[84px] rounded-full ink-border flex items-center justify-center shrink-0"
+          style="background: linear-gradient(135deg, #4A90D9, #0066CC);">
+          <div
+            class="w-[78%] h-[78%] rounded-full bg-white/40 flex items-center justify-center text-[24px] md:text-[30px]">
+            👨‍⚕️</div>
+        </div>
+        <div
+          class="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-paper ink-border flex items-center justify-center text-lg md:text-[22px] font-extrabold">
+          01</div>
+        <div class="min-w-0">
+          <h3 class="text-lg md:text-2xl font-extrabold tracking-tight">Free Practice Audit</h3>
+          <p class="text-[13px] md:text-[14px] leading-[1.5] text-ink/65 mt-1.5 max-w-[640px]">30-min call. We map your patient funnel, audit your online reputation, and identify the 3 leaks costing you OPD appointments this quarter.</p>
+        </div>
+        <a href="#audit"
+          class="w-10 h-10 md:w-11 md:h-11 rounded-full bg-white ink-border flex items-center justify-center text-orange text-lg md:text-xl hover:bg-orange hover:text-white transition justify-self-end"
+          aria-label="Go to audit">↗</a>
+      </div>
+      <div
+        class="grid grid-cols-[auto_auto_1fr_auto] md:grid-cols-[120px_72px_1fr_60px] gap-4 md:gap-6 items-center px-5 md:px-8 py-6 md:py-7 border-b-[1.5px] border-ink/15 hover:bg-paper/40 transition">
+        <div class="w-16 h-16 md:w-[84px] md:h-[84px] rounded-full ink-border flex items-center justify-center shrink-0"
+          style="background: linear-gradient(135deg, #E8F4FD, #FF6B35);">
+          <div
+            class="w-[78%] h-[78%] rounded-full bg-white/40 flex items-center justify-center text-[24px] md:text-[30px]">
+            🎥</div>
+        </div>
+        <div
+          class="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-paper ink-border flex items-center justify-center text-lg md:text-[22px] font-extrabold">
+          02</div>
+        <div class="min-w-0">
+          <h3 class="text-lg md:text-2xl font-extrabold tracking-tight">Patient-First Production</h3>
+          <p class="text-[13px] md:text-[14px] leading-[1.5] text-ink/65 mt-1.5 max-w-[640px]">We shoot what patients actually want to see — real doctor-patient consultations, procedure explainers, recovery stories — in documentary style. No stock, no stiffness.</p>
+        </div>
+        <a href="#audit"
+          class="w-10 h-10 md:w-11 md:h-11 rounded-full bg-white ink-border flex items-center justify-center text-orange text-lg md:text-xl hover:bg-orange hover:text-white transition justify-self-end"
+          aria-label="Go to audit">↗</a>
+      </div>
+      <div
+        class="grid grid-cols-[auto_auto_1fr_auto] md:grid-cols-[120px_72px_1fr_60px] gap-4 md:gap-6 items-center px-5 md:px-8 py-6 md:py-7 hover:bg-paper/40 transition">
+        <div class="w-16 h-16 md:w-[84px] md:h-[84px] rounded-full ink-border flex items-center justify-center shrink-0"
+          style="background: linear-gradient(135deg, #00A67E, #4A90D9);">
+          <div
+            class="w-[78%] h-[78%] rounded-full bg-white/40 flex items-center justify-center text-[24px] md:text-[30px]">
+            📊</div>
+        </div>
+        <div
+          class="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-paper ink-border flex items-center justify-center text-lg md:text-[22px] font-extrabold">
+          03</div>
+        <div class="min-w-0">
+          <h3 class="text-lg md:text-2xl font-extrabold tracking-tight">Performance Campaigns</h3>
+          <p class="text-[13px] md:text-[14px] leading-[1.5] text-ink/65 mt-1.5 max-w-[640px]">Geo-targeted ads across Google Local Services, Meta and YouTube, optimized weekly. You get a live dashboard showing cost-per-patient, appointment bookings, and OPD footfall.</p>
+        </div>
+        <a href="#audit"
+          class="w-10 h-10 md:w-11 md:h-11 rounded-full bg-white ink-border flex items-center justify-center text-orange text-lg md:text-xl hover:bg-orange hover:text-white transition justify-self-end"
+          aria-label="Go to audit">↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="voices" class="px-5 md:px-10 lg:px-16 max-w-[1440px] mx-auto py-16 md:py-20">
+    <div class="grid lg:grid-cols-[260px_1fr_220px] gap-6 md:gap-12 lg:gap-12 items-end mb-8 md:mb-10"
+      data-anim="fade-up">
+      <div>
+        <div class="text-[12px] font-bold text-ink/55 tracking-[0.12em] uppercase">Our Voices</div>
+        <h2 class="text-[32px] md:text-[36px] font-extrabold mt-2 leading-[1.1]">Heard from<br>The <span
+            class="text-orange">Administrators</span></h2>
+      </div>
+      <p class="text-[15px] md:text-[17px] leading-[1.5] text-ink/75">What heads of hospitals and clinics across Jaipur say after working with TCP — <span class="hl-yellow">real numbers, real patient stories, real OPD footfall.</span></p>
+      <a href="#"
+        class="inline-flex items-center gap-2.5 bg-white ink-border rounded-full px-5 py-3 text-sm font-semibold sh-3 btn-press whitespace-nowrap self-start lg:self-auto">
+        <span class="w-2 h-2 rounded-full bg-orange"></span>Read the case studies<span>→</span>
+      </a>
+    </div>
+    <div class="ink-border sh-5 rounded-[24px] p-4 md:p-8 grid md:grid-cols-3 gap-4 md:gap-5"
+      style="background: linear-gradient(120deg, #0066CC 0%, #00A67E 50%, #4A90D9 100%);" data-anim="fade-up">
+      <article class="bg-white ink-border rounded-3xl p-6 flex flex-col gap-4 md:min-h-[280px]">
+        <div class="flex items-center gap-3">
+          <div class="w-14 h-14 rounded-full flex items-center justify-center shrink-0"
+            style="background: linear-gradient(135deg, #00A67E, #FF6B35);">
+            <div class="w-[78%] h-[78%] rounded-full bg-white/40 flex items-center justify-center text-lg">👨‍⚕️</div>
+          </div>
+          <div>
+            <div class="text-[14px] font-extrabold">Dr. R. Sharma</div>
+            <div class="text-[11px] text-ink/65">Hospital Administrator, Multi-specialty hospital, Jaipur</div>
+          </div>
+        </div>
+        <p class="text-[15px] leading-[1.5] font-medium flex-1">"Our OPD appointment requests went up 3.2x in one quarter. The TCP team understood our hospital's voice better than our in-house marketing."</p>
+        <div class="flex gap-1 text-orange">★★★★★</div>
+      </article>
+      <article class="bg-sun ink-border rounded-3xl p-6 flex flex-col gap-4 md:min-h-[280px]">
+        <div class="flex items-center gap-3">
+          <div class="w-14 h-14 rounded-full flex items-center justify-center shrink-0"
+            style="background: linear-gradient(135deg, #4A90D9, #0066CC);">
+            <div class="w-[78%] h-[78%] rounded-full bg-white/40 flex items-center justify-center text-lg">🦷</div>
+          </div>
+          <div>
+            <div class="text-[14px] font-extrabold">Dr. A. Singhvi</div>
+            <div class="text-[11px] text-ink/65">Owner, Dental Clinic, Rajasthan</div>
+          </div>
+        </div>
+        <p class="text-[15px] leading-[1.5] font-medium flex-1">"We finally have ad campaigns we can defend in a board meeting. Numbers, not guesses. Our implant consultation bookings doubled."</p>
+        <div class="flex gap-1 text-orange">★★★★★</div>
+      </article>
+      <article class="bg-white ink-border rounded-3xl p-6 flex flex-col gap-4 md:min-h-[280px]">
+        <div class="flex items-center gap-3">
+          <div class="w-14 h-14 rounded-full flex items-center justify-center shrink-0"
+            style="background: linear-gradient(135deg, #00A67E, #E8F4FD);">
+            <div class="w-[78%] h-[78%] rounded-full bg-white/40 flex items-center justify-center text-lg">👩‍⚕️</div>
+          </div>
+          <div>
+            <div class="text-[14px] font-extrabold">Dr. P. Menon</div>
+            <div class="text-[11px] text-ink/65">Director, Maternity Center</div>
+          </div>
+        </div>
+        <p class="text-[15px] leading-[1.5] font-medium flex-1">"The documentary they made about our NICU journey is what convinced 40% of this month's expecting mothers to choose our center."</p>
+        <div class="flex gap-1 text-orange">★★★★★</div>
+      </article>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="px-5 md:px-10 lg:px-16 max-w-[1440px] mx-auto py-16 md:py-24">
+    <div class="grid lg:grid-cols-[1fr_1.6fr] gap-10 lg:gap-16 items-start">
+      <div data-anim="fade-up">
+        <div class="text-[12px] font-bold text-ink/55 tracking-[0.12em] uppercase">FAQ</div>
+        <h2 class="h-section mt-3">Things <span class="font-hand text-orange font-bold">hospital boards</span> ask first.</h2>
+        <div class="bg-white ink-border rounded-3xl p-5 sh-4 mt-8 max-w-sm">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-12 h-12 rounded-full ink-border flex items-center justify-center"
+              style="background: linear-gradient(135deg, #FF6B35, #E8F4FD);">
+              <div class="w-[78%] h-[78%] rounded-full bg-white/40 flex items-center justify-center text-base">💬</div>
+            </div>
+            <div>
+              <div class="text-sm font-extrabold">Still have questions?</div>
+              <div class="text-[12px] text-ink/65">WhatsApp us — we reply fast.</div>
+            </div>
+          </div>
+          <a href="https://wa.me/917258055245?text=Hello%20team%20ThriveClip%20Productions%2C%20I%20have%20a%20question."
+            target="_blank" rel="noopener"
+            class="bg-orange text-white ink-border rounded-full px-5 py-2.5 text-sm font-bold sh-3 btn-press inline-flex items-center gap-2.5">
+            <span class="w-2 h-2 rounded-full bg-white"></span>Chat on WhatsApp<span>→</span>
+          </a>
+        </div>
+      </div>
+      <div class="space-y-3" data-anim="fade-up">
+        <details open class="faq-item group bg-sun ink-border rounded-[20px] sh-4">
+          <summary class="cursor-pointer list-none px-5 md:px-6 py-5 flex items-center justify-between gap-4">
+            <div class="flex items-center gap-3 flex-1 min-w-0">
+              <span
+                class="w-8 h-8 rounded-full bg-ink text-white text-[12px] font-bold flex items-center justify-center shrink-0">Q1</span>
+              <h3 class="text-[15px] md:text-[17px] font-bold tracking-tight">What exactly do I get in the Free Practice Audit?</h3>
+            </div>
+            <span
+              class="w-8 h-8 rounded-full bg-white ink-border flex items-center justify-center text-lg font-bold shrink-0 transition-transform group-open:rotate-45">+</span>
+          </summary>
+          <p class="px-5 md:px-6 pb-5 pl-[60px] md:pl-[64px] text-[14px] leading-[1.6] text-ink/80">A 30-minute call where we review your hospital's current online presence, ad spend, and patient acquisition funnel — then send a written diagnostic with 3 specific fixes you can action whether you work with us or not.</p>
+        </details>
+        <details class="faq-item group bg-white ink-border rounded-[20px] sh-2">
+          <summary class="cursor-pointer list-none px-5 md:px-6 py-5 flex items-center justify-between gap-4">
+            <div class="flex items-center gap-3 flex-1 min-w-0">
+              <span
+                class="w-8 h-8 rounded-full bg-ink text-white text-[12px] font-bold flex items-center justify-center shrink-0">Q2</span>
+              <h3 class="text-[15px] md:text-[17px] font-bold tracking-tight">We've worked with agencies before — they didn't move the needle. Why is TCP different?</h3>
+            </div>
+            <span
+              class="w-8 h-8 rounded-full bg-white ink-border flex items-center justify-center text-lg font-bold shrink-0 transition-transform group-open:rotate-45">+</span>
+          </summary>
+          <p class="px-5 md:px-6 pb-5 pl-[60px] md:pl-[64px] text-[14px] leading-[1.6] text-ink/80">We don't sell 'content packages.' We're hired to move patient numbers. Every patient story, every ad, every procedure video maps to a measurable outcome — appointments, OPD footfall, or cost-per-patient — agreed before we shoot a frame.</p>
+        </details>
+        <details class="faq-item group bg-white ink-border rounded-[20px] sh-2">
+          <summary class="cursor-pointer list-none px-5 md:px-6 py-5 flex items-center justify-between gap-4">
+            <div class="flex items-center gap-3 flex-1 min-w-0">
+              <span
+                class="w-8 h-8 rounded-full bg-ink text-white text-[12px] font-bold flex items-center justify-center shrink-0">Q3</span>
+              <h3 class="text-[15px] md:text-[17px] font-bold tracking-tight">Do you understand patient privacy and local healthcare regulations?</h3>
+            </div>
+            <span
+              class="w-8 h-8 rounded-full bg-white ink-border flex items-center justify-center text-lg font-bold shrink-0 transition-transform group-open:rotate-45">+</span>
+          </summary>
+          <p class="px-5 md:px-6 pb-5 pl-[60px] md:pl-[64px] text-[14px] leading-[1.6] text-ink/80">Absolutely. We shoot with signed patient consent forms, anonymize cases when needed, and follow NDHM and local clinical establishment guidelines. We also provide NDA coverage for proprietary procedures and patient data.</p>
+        </details>
+        <details class="faq-item group bg-white ink-border rounded-[20px] sh-2">
+          <summary class="cursor-pointer list-none px-5 md:px-6 py-5 flex items-center justify-between gap-4">
+            <div class="flex items-center gap-3 flex-1 min-w-0">
+              <span
+                class="w-8 h-8 rounded-full bg-ink text-white text-[12px] font-bold flex items-center justify-center shrink-0">Q4</span>
+              <h3 class="text-[15px] md:text-[17px] font-bold tracking-tight">How long until we see results from the campaigns?</h3>
+            </div>
+            <span
+              class="w-8 h-8 rounded-full bg-white ink-border flex items-center justify-center text-lg font-bold shrink-0 transition-transform group-open:rotate-45">+</span>
+          </summary>
+          <p class="px-5 md:px-6 pb-5 pl-[60px] md:pl-[64px] text-[14px] leading-[1.6] text-ink/80">Brand-recall lift in 30 days. Cost-per-appointment reduction by week 6. Quality patient leads in the funnel by month 2 — assuming a typical mid-quarter launch. We share a weekly dashboard so you're never guessing.</p>
+        </details>
+        <details class="faq-item group bg-white ink-border rounded-[20px] sh-2">
+          <summary class="cursor-pointer list-none px-5 md:px-6 py-5 flex items-center justify-between gap-4">
+            <div class="flex items-center gap-3 flex-1 min-w-0">
+              <span
+                class="w-8 h-8 rounded-full bg-ink text-white text-[12px] font-bold flex items-center justify-center shrink-0">Q5</span>
+              <h3 class="text-[15px] md:text-[17px] font-bold tracking-tight">What does a typical engagement cost?</h3>
+            </div>
+            <span
+              class="w-8 h-8 rounded-full bg-white ink-border flex items-center justify-center text-lg font-bold shrink-0 transition-transform group-open:rotate-45">+</span>
+          </summary>
+          <p class="px-5 md:px-6 pb-5 pl-[60px] md:pl-[64px] text-[14px] leading-[1.6] text-ink/80">Engagements start at the equivalent of one extra OPD day per month. We scope per-hospital after the audit — pricing depends on shoot days, ad spend, and campaign length. No retainer lock-ins.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section id="audit" class="px-5 md:px-10 lg:px-16 max-w-[1440px] mx-auto py-16 md:py-20">
+    <div
+      class="bg-ink text-white ink-border rounded-[24px] sm:rounded-[32px] sh-orange-8 relative overflow-hidden p-5 sm:p-7 md:p-12 lg:p-16">
+      <div class="absolute -top-10 -right-10 w-52 h-52 rounded-full bg-orange/50 blur-[40px] pointer-events-none"></div>
+      <div class="absolute -bottom-16 left-40 w-60 h-60 rounded-full bg-primary/30 blur-[60px] pointer-events-none">
+      </div>
+      <div class="grid lg:grid-cols-[1.2fr_1fr] gap-10 md:gap-16 items-start relative z-10">
+        <div data-anim="fade-up">
+          <div
+            class="bg-sun ink-border rounded-full inline-flex items-center gap-2 px-4 py-2 text-[12px] font-bold tracking-[0.08em] uppercase text-ink mb-5">
+            <span class="w-2 h-2 rounded-full bg-ink"></span>Free Practice Audit · 30 min
+          </div>
+          <h2 class="h-cta">Show us your<br>funnel. <span class="font-hand text-sun font-bold">We'll show</span><br>you
+            the leak.</h2>
+          <p class="text-[16px] md:text-[18px] leading-[1.55] text-white/65 mt-7 max-w-[460px]">30 minutes with our healthcare growth strategist. Walk away with a written diagnostic — three specific fixes ranked by impact. No deck. No retainer. No obligation.</p>
+          <ul class="flex flex-wrap gap-2.5 mt-7">
+            <li class="bg-white/10 border border-white/20 rounded-full px-4 py-2 text-[13px] font-medium">✓ No retainer
+            </li>
+            <li class="bg-white/10 border border-white/20 rounded-full px-4 py-2 text-[13px] font-medium">✓ Local team
+              in Jaipur</li>
+            <li class="bg-white/10 border border-white/20 rounded-full px-4 py-2 text-[13px] font-medium">✓ NDA on
+              request</li>
+            <li class="bg-white/10 border border-white/20 rounded-full px-4 py-2 text-[13px] font-medium">✓ Hindi /
+              English / Marwari</li>
+          </ul>
+          <div class="flex items-center gap-4 mt-10">
+            <div class="flex">
+              <div class="w-11 h-11 rounded-full ink-border flex items-center justify-center relative z-40"
+                style="background: linear-gradient(135deg, #00A67E, #FF6B35);">
+                <div class="w-[78%] h-[78%] rounded-full bg-white/40 flex items-center justify-center text-sm">👨‍⚕️
+                </div>
+              </div>
+              <div class="-ml-3.5 w-11 h-11 rounded-full ink-border flex items-center justify-center relative z-30"
+                style="background: linear-gradient(135deg, #4A90D9, #0066CC);">
+                <div class="w-[78%] h-[78%] rounded-full bg-white/40 flex items-center justify-center text-sm">👩‍⚕️
+                </div>
+              </div>
+              <div class="-ml-3.5 w-11 h-11 rounded-full ink-border flex items-center justify-center relative z-20"
+                style="background: linear-gradient(135deg, #E8F4FD, #00A67E);">
+                <div class="w-[78%] h-[78%] rounded-full bg-white/40 flex items-center justify-center text-sm">👨‍⚕️
+                </div>
+              </div>
+              <div class="-ml-3.5 w-11 h-11 rounded-full ink-border flex items-center justify-center relative z-10"
+                style="background: linear-gradient(135deg, #00A67E, #4A90D9);">
+                <div class="w-[78%] h-[78%] rounded-full bg-white/40 flex items-center justify-center text-sm">👩‍⚕️
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="text-sm font-extrabold">40+ Jaipur healthcare providers</div>
+              <div class="text-[12px] text-white/55">Already moved their numbers</div>
+            </div>
+          </div>
+        </div>
+        <form id="auditForm"
+          class="bg-white text-ink ink-border rounded-[20px] sh-orange-4 p-4 sm:p-6 md:p-8 self-start"
+          data-anim="fade-up" onsubmit="handleSubmit(event)">
+          <div
+            class="bg-mint ink-border rounded-full inline-block px-3 sm:px-3.5 py-1 sm:py-1.5 text-[10px] sm:text-[11px] font-bold tracking-[0.08em] uppercase mb-4 sm:mb-5">
+            ● 4 slots open this week</div>
+          <div class="space-y-2.5 sm:space-y-3.5">
+            <div>
+              <label class="block text-[11px] sm:text-[12px] font-bold text-ink/70 mb-1 sm:mb-1.5">Your name</label>
+              <input id="f_name" type="text" placeholder="Dr. R. Sharma" required
+                class="w-full bg-paper ink-border rounded-lg sm:rounded-xl px-3 sm:px-4 py-2.5 sm:py-3 text-[13px] sm:text-sm outline-none focus:border-orange transition">
+            </div>
+            <div>
+              <label class="block text-[11px] sm:text-[12px] font-bold text-ink/70 mb-1 sm:mb-1.5">Hospital / Clinic name</label>
+              <input id="f_school" type="text" placeholder="City Hospital & Maternity Center" required
+                class="w-full bg-paper ink-border rounded-lg sm:rounded-xl px-3 sm:px-4 py-2.5 sm:py-3 text-[13px] sm:text-sm outline-none focus:border-orange transition">
+            </div>
+            <div>
+              <label class="block text-[11px] sm:text-[12px] font-bold text-ink/70 mb-1 sm:mb-1.5">Your role</label>
+              <input id="f_role" type="text" placeholder="Doctor / Admin / Marketing Head" required
+                class="w-full bg-paper ink-border rounded-lg sm:rounded-xl px-3 sm:px-4 py-2.5 sm:py-3 text-[13px] sm:text-sm outline-none focus:border-orange transition">
+            </div>
+            <div class="grid grid-cols-2 gap-2.5 sm:gap-3.5">
+              <div>
+                <label class="block text-[11px] sm:text-[12px] font-bold text-ink/70 mb-1 sm:mb-1.5">City</label>
+                <input id="f_city" type="text" placeholder="Jaipur" required
+                  class="w-full bg-paper ink-border rounded-lg sm:rounded-xl px-3 sm:px-4 py-2.5 sm:py-3 text-[13px] sm:text-sm outline-none focus:border-orange transition">
+              </div>
+              <div>
+                <label class="block text-[11px] sm:text-[12px] font-bold text-ink/70 mb-1 sm:mb-1.5">Phone</label>
+                <input id="f_phone" type="tel" placeholder="+91 ..." required
+                  class="w-full bg-paper ink-border rounded-lg sm:rounded-xl px-3 sm:px-4 py-2.5 sm:py-3 text-[13px] sm:text-sm outline-none focus:border-orange transition">
+              </div>
+            </div>
+            <div>
+              <label class="block text-[11px] sm:text-[12px] font-bold text-ink/70 mb-1 sm:mb-1.5">Email</label>
+              <input id="f_email" type="email" placeholder="admin@yourhospital.in" required
+                class="w-full bg-paper ink-border rounded-lg sm:rounded-xl px-3 sm:px-4 py-2.5 sm:py-3 text-[13px] sm:text-sm outline-none focus:border-orange transition">
+            </div>
+            <button type="submit"
+              class="w-full bg-orange text-white ink-border rounded-lg sm:rounded-xl py-3 sm:py-4 text-[13px] sm:text-[15px] font-bold sh-3 btn-press inline-flex items-center justify-center gap-2 sm:gap-2.5 mt-1 sm:mt-2">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="sm:w-[18px] sm:h-[18px]">
+                <path
+                  d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+              </svg>
+              Send via WhatsApp<span>→</span>
+            </button>
+            <div class="text-[10px] sm:text-[11px] text-ink/60 text-center pt-1">We respond within 4 business hours ·
+              Mon–Sat</div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="px-5 md:px-10 lg:px-16 max-w-[1440px] mx-auto py-8 md:py-10">
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-5 text-[13px] text-ink/65">
+      <div class="flex items-center gap-3 flex-wrap">
+        <img src="tcp-logo.jpeg" alt="TCP" class="w-8 h-8 rounded-full ink-border object-cover">
+        <span class="font-bold text-ink">Thrive Clip Productions</span>
+        <span class="hidden md:inline">·</span>
+        <a href="https://share.google/hy3mlt7kmtoccVaSR" target="_blank" rel="noopener"
+          class="hover:text-orange transition inline-flex items-center gap-1"><span>📍</span> Jaipur, Rajasthan</a>
+      </div>
+      <div class="flex flex-wrap items-center gap-x-6 gap-y-2">
+        <a href="mailto:thriveclipproductions@gmail.com"
+          class="hover:text-orange transition break-all">thriveclipproductions@gmail.com</a>
+        <a href="tel:+917258055245" class="hover:text-orange transition">+91 7258 055245</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script type="module">
+    import { animate, inView } from "https://cdn.jsdelivr.net/npm/motion@10.18.0/+esm";
+
+    // Mobile menu
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn?.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    mobileMenu?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+
+    // Scroll-triggered fade-up
+    document.querySelectorAll('[data-anim]').forEach((el) => {
+      el.style.transform = 'translateY(28px)';
+      inView(el, () => {
+        animate(el, { opacity: [0, 1], transform: ['translateY(28px)', 'translateY(0px)'] }, { duration: 0.7, easing: [0.16, 1, 0.3, 1] });
+      }, { amount: 0.15 });
+    });
+
+    // FAQ accordion
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      item.addEventListener('toggle', () => {
+        if (item.open) {
+          item.classList.remove('sh-2'); item.classList.add('sh-4');
+          faqItems.forEach(other => { if (other !== item && other.open) { other.open = false; other.classList.remove('sh-4'); other.classList.add('sh-2'); } });
+        } else { item.classList.remove('sh-4'); item.classList.add('sh-2'); }
+      });
+    });
+
+    // Google Sheet
+    const SHEET_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyuv62sc-kxOxPVCIV0DFkQ4XalA-OTDVLoX7acyictcTxkCeLq1im0l1za8xWrbGhbhA/exec";
+
+    // Form submit — Lead fires ONLY ONCE here
+    window.handleSubmit = async (e) => {
+      e.preventDefault();
+      const form = e.target;
+      const btn = form.querySelector('button[type="submit"]');
+      const originalHTML = btn.innerHTML;
+
+      const lead = {
+        name: document.getElementById('f_name').value.trim(),
+        hospital: document.getElementById('f_school').value.trim(),
+        role: document.getElementById('f_role').value.trim(),
+        city: document.getElementById('f_city').value.trim(),
+        phone: document.getElementById('f_phone').value.trim(),
+        email: document.getElementById('f_email').value.trim(),
+      };
+
+      btn.innerHTML = '⏳ Saving…';
+      btn.style.background = '#E8F4FD';
+      btn.style.color = '#1A202C';
+      btn.disabled = true;
+
+      if (SHEET_SCRIPT_URL && !SHEET_SCRIPT_URL.includes("PASTE_YOUR")) {
+        try {
+          const formData = new FormData();
+          Object.entries(lead).forEach(([k, v]) => formData.append(k, v));
+          await fetch(SHEET_SCRIPT_URL, { method: 'POST', mode: 'no-cors', body: formData });
+        } catch (err) { console.warn('Sheet save failed:', err); }
+      }
+
+      const message = `Hello team ThriveClip Productions,
+I am interested in your healthcare marketing services for our hospital/clinic.
+Here are my details:
+👤 Name: ${lead.name}
+🏥 Hospital/Clinic: ${lead.hospital}
+🎓 Role: ${lead.role}
+📍 City: ${lead.city}
+📞 Phone: ${lead.phone}
+📧 Email: ${lead.email}
+Please contact me at your earliest convenience.
+Thank you!`;
+      const whatsappUrl = `https://wa.me/917258055245?text=${encodeURIComponent(message)}`;
+
+      // ===== LEAD TRACKING ONLY HERE - ONE TIME =====
+      if (typeof fbq !== 'undefined') { fbq('track', 'Lead'); }
+
+      btn.innerHTML = '✓ Opening WhatsApp…';
+      btn.style.background = '#00A67E';
+
+      setTimeout(() => {
+        window.open(whatsappUrl, '_blank', 'noopener');
+        btn.innerHTML = originalHTML;
+        btn.style.background = '';
+        btn.style.color = '';
+        btn.disabled = false;
+        form.reset();
+      }, 600);
+    };
+  </script>
+</body>
+
+</html>
